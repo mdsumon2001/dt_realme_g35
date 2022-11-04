@@ -19,13 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common NusantaraROM stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common.mk)
 
 # Inherit from RMX2185 device makefile
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
-# NusantaraProject stuff
-TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_BOOT_ANIMATION_RES := 720
 ALLOW_MISSING_DEPENDENCIES=true
 
@@ -33,9 +31,9 @@ ALLOW_MISSING_DEPENDENCIES=true
 PRODUCT_DEVICE := RMX2185
 PRODUCT_NAME := nad_RMX2185
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme C2
+PRODUCT_MODEL := Realme G35
 PRODUCT_MANUFACTURER := realme
-PRODUCT_RELEASE_NAME := Realme C2
+PRODUCT_RELEASE_NAME := Realme G35
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \

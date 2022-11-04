@@ -73,7 +73,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 
-#BOARD_KERNEL_CMDLINE += buildvariant=user androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += buildvariant=user androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -88,8 +88,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-#TARGET_KERNEL_SOURCE := kernel/realme/mt6765
-#TARGET_KERNEL_CONFIG := RMX2185_defconfig
+TARGET_KERNEL_SOURCE := kernel/realme/mt6765
+TARGET_KERNEL_CONFIG := RMX2185_defconfig
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
