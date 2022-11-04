@@ -26,9 +26,6 @@ $(call inherit-product, vendor/realme/RMX2185/RMX2185-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# IMS
-$(call inherit-product, vendor/mtk-ims/ims.mk)
-
 # RealmeDirac
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
 
@@ -89,7 +86,7 @@ PRODUCT_PACKAGES += \
 	
 # APNs
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \\
+    $(DEVICE_PATH)/rootdir/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \
     $(DEVICE_PATH)/rootdir/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/spn-conf.xml
 	
 # fastbootd
