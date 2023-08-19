@@ -22,4 +22,8 @@ Release Month | 2020, June 30 (RMX2185), 2020, August 14 (RMX2189), 2020, July 2
 
 ![Realme C12](https://fdn2.gsmarena.com/vv/pics/realme/realme-c12-2.jpg "Realme C12")
 
+Join : https://t.me/Realmec11_official
+Follow : https://t.me/realme_c11_c12_c15_update
+https://t.me/Info_Shakib
+
 Copyright (C) 2021 Lineage OS
