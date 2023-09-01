@@ -18,14 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common NusantaraROM stuff.
+# Inherit some common rrOS stuff.
 $(call inherit-product, vendor/rr/config/common.mk)
 
 # Inherit from RMX2185 device makefile
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
-RR_BUILDTYPE := Oppenheimer
+RR_BUILDTYPE := Unofficial
+TARGET_GAPPS_ARCH := false
+WITH_GMS := false
 BUILD_RR_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
