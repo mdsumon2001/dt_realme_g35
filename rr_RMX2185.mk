@@ -24,8 +24,10 @@ $(call inherit-product, vendor/rr/config/common.mk)
 # Inherit from RMX2185 device makefile
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Oppenheimer
+BUILD_RR_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 720
-ALLOW_MISSING_DEPENDENCIES=true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2185
